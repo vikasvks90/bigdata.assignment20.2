@@ -1,0 +1,4 @@
+Hive import
+Note: There is some issue in Acadgild environment have raised a ticket for the same but no positive response, that's why screenshot is not available
+------------
+sqoop import --connect jdbc:mysql://localhost/db1 --username 'acadgild' -P --table 'company' --target-dir '/sqoopout' --incremental append --check-column id --last-value 4 --hive-import -m 1;
